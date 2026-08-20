@@ -3,7 +3,7 @@ interface Student {
     marks: number[]
 
 }
-interface Ruslt {
+interface Result {
     name: string
     average: number
     result: string

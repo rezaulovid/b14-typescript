@@ -5,9 +5,9 @@ interface Products {
 }
 
 
-const findProducts = (products:Product[], category:string):Product[] =>{
+const findProducts = (products:Products[], category:string):Products[] =>{
 
-const categoryProducts:Product[] = products.filter((product) =>product.category === category)
+const categoryProducts:Products[] = products.filter((product) =>product.category === category)
 
 return categoryProducts
 }

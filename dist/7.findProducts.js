@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const findProducts = (products, category) => {
-    const categoryProduct = products.filter((product) => products.category === category);
+    const categoryProducts = products.filter((product) => product.category === category);
     return categoryProducts;
 };
 const products = [
@@ -12,6 +12,6 @@ const products = [
 ];
 console.log(findProducts(products, "phone"));
 // returns the iPhone 15 and Galaxy S24 objects
-// findProducts(products, "laptop");
+console.log(findProducts(products, "laptop"));
 // returns the two laptop products
 //# sourceMappingURL=7.findProducts.js.map
